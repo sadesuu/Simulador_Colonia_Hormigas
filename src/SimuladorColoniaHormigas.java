@@ -123,7 +123,7 @@ public class SimuladorColoniaHormigas {
      * Bucle principal de actualización de la visualización.
      * Limpia la consola, mueve hormigas, actualiza el mapa y muestra estadísticas.
      * Se ejecuta mientras la simulación esté activa.
-     * Complejidad temporal: O(n²)
+     * Complejidad: O(n²)
      */
     private void actualizarVisualizacion(){
         while (simulacionActiva) {
