@@ -20,22 +20,5 @@ public class HormigaObrera extends Hormiga {
     }
 
 
-    /**
-     * Método que define el comportamiento del hilo de la hormiga obrera.
-     * Mantiene la hormiga activa mientras el flag 'activa' sea true.
-     * La hormiga permanece en espera de 100ms entre iteraciones.
-     * Complejidad: O(n)
-     */
-    @Override
-    public void run() {
-        Random random = new Random();
-        while (activa) {
-            try {
-                Thread.sleep(random.nextInt(101));
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-                break;
-            }
-        }
-    }
+
 }
