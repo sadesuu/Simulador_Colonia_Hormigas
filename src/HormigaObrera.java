@@ -1,3 +1,5 @@
+import java.util.Random;
+
 /**
  * Clase que representa una hormiga obrera en la simulación.
  * Las hormigas obreras son las trabajadoras de la colonia, encargadas de
@@ -18,21 +20,5 @@ public class HormigaObrera extends Hormiga {
     }
 
 
-    /**
-     * Método que define el comportamiento del hilo de la hormiga obrera.
-     * Mantiene la hormiga activa mientras el flag 'activa' sea true.
-     * La hormiga permanece en espera de 100ms entre iteraciones.
-     * Complejidad: O(n)
-     */
-    @Override
-    public void run() {
-        while (activa) {
-            try {
-                Thread.sleep(100);
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-                break;
-            }
-        }
-    }
+
 }

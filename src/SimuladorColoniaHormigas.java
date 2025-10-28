@@ -11,7 +11,7 @@ public class SimuladorColoniaHormigas {
     private static final int numHormigas = 10;
 
     // Tiempo entre actualizaciones del mapa en milisegundos
-    private static final int duracionSimulacion = 1000;
+    private static final int duracionSimulacion = 2000;
 
     // Matriz de direcciones posibles: arriba, derecha, abajo, izquierda
     private static final int [][] DIRECCIONES =
@@ -66,12 +66,6 @@ public class SimuladorColoniaHormigas {
     public void ejecutar(){
         simulacionActiva = true;
         generarHormigas();
-
-        try{
-            Thread.sleep(1000);
-        }catch(InterruptedException e){
-            Thread.currentThread().interrupt();
-        }
         actualizarVisualizacion();
     }
 
@@ -123,7 +117,7 @@ public class SimuladorColoniaHormigas {
      * Bucle principal de actualización de la visualización.
      * Limpia la consola, mueve hormigas, actualiza el mapa y muestra estadísticas.
      * Se ejecuta mientras la simulación esté activa.
-     * Complejidad temporal: O(n²)
+     * Complejidad: O(n²)
      */
     private void actualizarVisualizacion(){
         while (simulacionActiva) {

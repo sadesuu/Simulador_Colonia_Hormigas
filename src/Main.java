@@ -12,7 +12,7 @@ public class Main {
      * Muestra un menú de opciones al usuario y ejecuta la simulación según la elección.
      *
      * @param args Argumentos de línea de comandos (no utilizados)
-     * Complejidad temporal: O(n²)
+     * Complejidad: O(n²)
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
