@@ -44,7 +44,7 @@ public class SimuladorColoniaHormigas {
      */
     public void generarHormigas(){
         for(int i = 0; i < numHormigas; i++){
-            String id = "OBRERA_" + (i + 1);
+            String id = "OBRERA_" + (i + 1); 
             //Generar posicion aleatoria valida
             Posicion posicion;
             do{
