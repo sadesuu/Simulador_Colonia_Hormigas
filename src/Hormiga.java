@@ -86,7 +86,7 @@ public abstract class Hormiga extends Thread{
 
     /**
      * Detiene la ejecución del hilo de la hormiga.
-     * Establece el flag 'activa' a false para finalizar el bucle en run().
+     * Establece el atributo 'activa' a false para finalizar el bucle en run().
      * Complejidad: O(1)
      */
     public void detener() {
