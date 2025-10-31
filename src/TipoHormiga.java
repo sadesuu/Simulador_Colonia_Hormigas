@@ -18,7 +18,7 @@ public enum TipoHormiga {
      * Constructor del enum que inicializa el símbolo y nombre del tipo de hormiga.
      *
      * @param simbolo Carácter que representa la hormiga en el mapa
-     * @param nombre Nombre descriptivo del tipo de hormiga
+     * @param nombre Nombre del tipo de hormiga
      * Complejidad: O(1)
      */
     TipoHormiga(String simbolo, String nombre) {
