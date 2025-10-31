@@ -1,6 +1,8 @@
 import java.util.HashMap;
 import java.util.Random;
 
+import static java.lang.IO.println;
+
 /**
  * Clase principal que gestiona la simulación de la colonia de hormigas.
  * Coordina el movimiento de todas las hormigas, actualiza el mapa y
@@ -44,7 +46,7 @@ public class SimuladorColoniaHormigas {
      */
     public void generarHormigas(){
         for(int i = 0; i < numHormigas; i++){
-            String id = "OBRERA_" + (i + 1); 
+            String id = "OBRERA" + (i + 1);
             //Generar posicion aleatoria valida
             Posicion posicion;
             do{
@@ -74,6 +76,7 @@ public class SimuladorColoniaHormigas {
      * Complejidad: O(n)
      */
     public void detenerSimulacion(){
+
         simulacionActiva = false;
         for(Hormiga hormiga : hormigas.values()){
             hormiga.detener();

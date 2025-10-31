@@ -11,14 +11,13 @@ public class HormigaObrera extends Hormiga {
     /**
      * Constructor que crea una nueva hormiga obrera.
      *
-     * @param id Identificador único de la hormiga obrera
+     * @param id              Identificador único de la hormiga obrera
      * @param posicionInicial Posición inicial en el mapa donde aparecerá la hormiga
-     * Complejidad: O(1)
+     *                        Complejidad: O(1)
      */
     public HormigaObrera(String id, Posicion posicionInicial) {
         super(id, TipoHormiga.OBRERA, posicionInicial);
     }
-
 
 
 }
