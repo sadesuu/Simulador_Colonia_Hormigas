@@ -37,9 +37,9 @@ public enum TipoHormiga {
     }
 
     /**
-     * Obtiene el nombre descriptivo del tipo de hormiga.
+     * Obtiene el simbolo del tipo de hormiga.
      *
-     * @return Nombre completo del tipo de hormiga
+     * @return Nombre del tipo de hormiga
      * Complejidad: O(1)
      */
     public String getNombre() {

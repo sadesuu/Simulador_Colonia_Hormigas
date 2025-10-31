@@ -85,7 +85,7 @@ public class SimuladorColoniaHormigas {
      * Método sincronizado para evitar condiciones de carrera entre hilos.
      * Complejidad: O(n)
      */
-    private synchronized void moverTodasLasHormigas() {
+    synchronized void moverTodasLasHormigas() {
         for (Hormiga hormiga : hormigas.values()) {
             if (hormiga.isActiva()) {
                 moverHormigaAleatoriamente(hormiga);
