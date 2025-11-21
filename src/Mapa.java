@@ -7,10 +7,10 @@ import java.util.HashMap;
  */
 public class Mapa{
     // Ancho del mapa en caracteres/celdas
-    public static final int ANCHO = 50;
+    public static final int ANCHO = 14;
 
     // Alto del mapa en caracteres/celdas
-    public static final int ALTO = 20;
+    public static final int ALTO = 7;
 
     private final Posicion hormiguero;
     private final char[][] mapa;
@@ -68,15 +68,14 @@ public class Mapa{
      * Complejidad: O(n²)
      */
     public synchronized void mostrarMapa() {
-        System.out.println("═".repeat(ANCHO + 2));
+        System.out.println();
         for (int i = 0; i < ALTO; i++) {
-            System.out.print("║");
             for (int j = 0; j < ANCHO; j++) {
                 System.out.print(mapa[i][j]);
             }
-            System.out.println("║");
+            System.out.println();
         }
-        System.out.println("═".repeat(ANCHO + 2));
+        System.out.println();
     }
 
     /**

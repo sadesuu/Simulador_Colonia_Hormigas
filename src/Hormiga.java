@@ -11,11 +11,6 @@ public abstract class Hormiga extends Thread{
     protected Posicion posicion;
     protected volatile boolean activa;
     private final Random random;
-    private static final int[][] DIRECCIONES =
-            {{0,1},
-            {1,0},
-            {0,-1},
-            {-1,0}};
 
     /**
      * Constructor que inicializa una hormiga con sus atributos básicos.

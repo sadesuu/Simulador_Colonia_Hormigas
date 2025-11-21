@@ -10,7 +10,7 @@ import static java.lang.IO.println;
  */
 public class SimuladorColoniaHormigas {
     // Número de hormigas en la simulación
-    private static final int numHormigas = 10;
+    private static final int numHormigas = 6;
 
     // Tiempo entre actualizaciones del mapa en milisegundos
     private static final int duracionSimulacion = 2000;
